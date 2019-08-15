@@ -4,7 +4,8 @@ import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import {fetchImages,resetImages } from '../../redux/actions/fetchImages';
+import { fetchImages, resetImages } from '../../redux/actions/fetchImages';
+import Images from '../ImageResults';
 
 const Search = ({fetchImages,resetImages,image}) => {
   const [amount, setAmount] = useState(15);
@@ -38,6 +39,10 @@ const Search = ({fetchImages,resetImages,image}) => {
         <MenuItem value={30} primaryText="30" />
         <MenuItem value={50} primaryText="50"/>
       </SelectField>
+      <br />
+      {image.images.length ? (
+        <Images images={image.images}/>
+      ):null}
     </div>
   )
 }

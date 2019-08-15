@@ -2,7 +2,7 @@ import { IMAGES_PENDING, IMAGES_FETCHED } from "../actions/types";
 
 const initialState = {
   images: [],
-  loading:false
+  loading: false
 }
 
 export default (state = initialState, { type, payload }) => {

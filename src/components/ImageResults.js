@@ -43,7 +43,7 @@ export default class ImageResults extends Component {
               key={img.id}
               subtitle={
                 <span>
-                  By <strong>{img.user}</strong>
+                  By <strong>{img.user}</strong> <br />
                 </span>
               }
               actionIcon={
@@ -54,7 +54,7 @@ export default class ImageResults extends Component {
                 </IconButton>
               }
             >
-              <img src={img.largeImageURL} alt={img.tags}/>
+              <img src={img.largeImageURL} alt={img.tags} />
             </GridTile>
           ))}
         </GridList>
