@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "serve -s ./build",
-    "dev": "webpack-dev-server --mode development --open"
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
@@ -20,6 +21,7 @@
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "dotenv-expand": "^5.1.0",
     "dotenv-webpack": "^1.7.0",
     "eslint": "^6.1.0",
     "eslint-loader": "^2.2.1",
@@ -36,6 +38,7 @@
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
+    "react-social-icons": "^4.1.0",
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
