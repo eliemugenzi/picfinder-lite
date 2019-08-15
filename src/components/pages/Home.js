@@ -7,7 +7,7 @@ const Home = () => {
       <div className="home__container">
         <div className="home__container--intro">
           <h3>Welcome to PicFinder Lite</h3>
-          <Link to="/" className="waves-effect waves-light btn">Get started</Link>
+          <Link to="/search" className="waves-effect waves-light btn">Get started</Link>
         </div>
       </div>
     </div>
